@@ -1,0 +1,96 @@
+\documentclass[fleqn]{beamer}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{booktabs}
+\usepackage{amsthm}
+\usepackage{pgf,tikz}
+
+\usetheme[]{default}
+%\useoutertheme{default}
+\useinnertheme{circles}
+%\useoutertheme[]{split}  %esconder esto de la titlepage y del outline
+\usecolortheme[RGB={21,54,152}]{structure}
+%\setbeamertemplate{footline}[frame number]
+%\setbeamertemplate{headline}{}
+\setbeamertemplate{footline}{}
+
+\beamertemplatenavigationsymbolsempty
+
+\title[]{Parking Infractions in Toronto}
+\subtitle[]{Case Study}
+
+\author[]{Susana Arias Laso}
+
+\date{\today}
+
+\begin{document}
+
+\begin{frame}
+  \titlepage
+  %\logo{
+  %  \includegraphics[width = 10cm]{"../figures/hoopp"}
+  %}
+  \tikz[remember picture, overlay] {\node[anchor=south east, outer sep=2.5pt] at (current page.south east) {\includegraphics[width=2cm]{"../figures/hoopp"}};}
+
+ 
+\end{frame}
+
+\begin{frame}
+\frametitle{Daily count of infractions in a year}
+  \centering
+  \includegraphics[width = 0.9\textwidth]{"../figures/daily_count_year"}
+\end{frame}
+
+\begin{frame}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Infraction locations grid}
+  \centering
+  \includegraphics[width = 0.9\textwidth]{"../figures/Toronto_grid"}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Every infraction between 2008 and 2022}
+  \centering
+  \href{https://sariaslaso.github.io/parking_toronto/figures/all_infractions.html}{\includegraphics[width = 0.9\textwidth]{"../figures/map_all_infractions"}}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Infraction count per month and day of week}
+  \centering
+  \href{https://sariaslaso.github.io/parking_toronto/figures/month_dayofweek_count.html}{\includegraphics[width = 0.9\textwidth]{"../figures/month_dayofweek_count"}}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Infraction count per day of week and hour of day}
+  \centering
+  \href{https://sariaslaso.github.io/parking_toronto/figures/dayofweek_hour_count.html}{\includegraphics[width = 0.9\textwidth]{"../figures/dayofweek_hour_count"}} 
+\end{frame}
+
+\begin{frame}
+  \frametitle{Infraction count per month and day of week in 2020}
+  \centering
+  \href{https://sariaslaso.github.io/parking_toronto/figures/month_dayofweek_count_2020.html}{\includegraphics[width = 0.9\textwidth]{"../figures/month_dayofweek_count_2020"}} 
+\end{frame}
+
+
+
+
+\end{document}
+
+
+
+
+
+
+
+
+
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: t
+%%% End:
